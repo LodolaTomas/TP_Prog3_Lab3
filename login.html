@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 – Formulario Login</title>
+    <script src="./javascript/funciones.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="./backend/verificarUsuario.php" method="POST" id="fmlbackend" name="fmlbackend" enctype="multipart/form-data">
+    <table>
+        <h2>Login</h2>
+        <th colspan="2"><h4>Ingreso de Credenciales</h4>
+        <tr><td colspan="2"><hr/></td></tr>
+        <tr><th><p><h4>DNI:</h4></p></td><td><input class="field" type="number" name="txtDniLogin" id="txtDniLogin" max="55000000" min="1000000"><span style="display: none; color:red;" id="spanDni">*</span></td></th></tr>
+        <tr><th><p><h4>Apellido:</h4></p></td> <td><input class="field" type="text" name="txtApellidoLogin" id="txtApellidoLogin"><span style="display: none; color:red;" id="spanApellido">*</span></td></th></tr>
+        <tr><td colspan="2"><hr/></td></tr>
+        <tr><td align="right" colspan="2"><input type="reset" name="btnLimpiarLogin" value="Limpiar" class="button button1" ></td></tr>   
+        <tr><td align="right" colspan="2"><input type="submit" name="btnEnviarLogin" value="Enviar" onclick="return AdministrarValidacionesLogin()"s class="button button1"></td></tr>
+    </table>
+    </form>
+</body>
+</html>

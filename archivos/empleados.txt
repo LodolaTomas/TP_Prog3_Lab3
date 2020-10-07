@@ -1,0 +1,5 @@
+lodo - luchii - 1000002 - Femenino - 108 - 12000 - TN - 1000002-luchii.gif
+
+tomas - lo3 - 1000004 - Femenino - 101 - 8500 - TM - 1000004-lo3.jpg
+
+nomb - apellido - 1000028 - Femenino - 107 - 13000 - TM - 1000028-apellido.jpg
