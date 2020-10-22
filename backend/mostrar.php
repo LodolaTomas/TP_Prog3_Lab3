@@ -7,6 +7,8 @@ $listaEmpleados = array();
 $unaFabrica = new Fabrica("Google", 7);
 $unaFabrica->TraerDeArchivo($path);
 $listaEmpleados=$unaFabrica->GetEmpleados();
+
+
 echo '
     <!DOCTYPE html>
     <html lang="en">
@@ -22,9 +24,9 @@ echo '
         '</form>
     <form id="fmlMostrar" id="fmlMostrar"><table>'; 
      include_once './validarSesion.php';
-    echo '<h2>Listado de Empleados</h2>
+    echo '<h2>Listado de Empleados<h2>
     
-    <th><h3>Info</h3>
+    <th><h3>Info<h3>
     <tr><td colspan="4"><hr/></td></tr>';
 
 foreach ($listaEmpleados as $unEmpleado) {
@@ -47,5 +49,6 @@ echo '
     </table>
     <a href="../index.php" ><h4>Alta de Empleados<h4></a>
     <a href="./cerrarSesion.php"><h4>Deslogearse<h4></a>
+    <a href="./MostrarPDF.php ">Mostrar en formato PDF</a>
     </body>
     </html>';
